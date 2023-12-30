@@ -12,9 +12,11 @@ class IntroPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: primaryColor,
       appBar: AppBar(
+        scrolledUnderElevation: 0,
         backgroundColor: primaryColor,
-        systemOverlayStyle:
-            SystemUiOverlayStyle(systemNavigationBarColor: primaryColor),
+        systemOverlayStyle: SystemUiOverlayStyle(
+            systemNavigationBarColor: primaryColor,
+            statusBarColor: primaryColor),
         title: Text(
           "JUNK FOODS",
           style: GoogleFonts.dmSerifDisplay(fontSize: 28, color: Colors.white),

@@ -33,12 +33,15 @@ class _FoodDetailPageState extends State<FoodDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[200],
       appBar: AppBar(
+        scrolledUnderElevation: 0,
         backgroundColor: Colors.transparent,
         foregroundColor: Colors.black,
         elevation: 0,
-        systemOverlayStyle:
-            SystemUiOverlayStyle(systemNavigationBarColor: primaryColor),
+        systemOverlayStyle: SystemUiOverlayStyle(
+            systemNavigationBarColor: primaryColor,
+            statusBarColor: Colors.grey[200]),
       ),
       body: Column(
         children: [
