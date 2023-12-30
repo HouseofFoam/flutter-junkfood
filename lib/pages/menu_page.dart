@@ -60,10 +60,12 @@ class _MenuPageState extends State<MenuPage> {
     return Scaffold(
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
+        scrolledUnderElevation: 0,
         backgroundColor: Colors.transparent,
         elevation: 0,
-        systemOverlayStyle:
-            SystemUiOverlayStyle(systemNavigationBarColor: Colors.grey[200]),
+        systemOverlayStyle: SystemUiOverlayStyle(
+            systemNavigationBarColor: Colors.grey[200],
+            statusBarColor: Colors.grey[200]),
         title: Text("JUNK FOODS",
             style:
                 GoogleFonts.dmSerifDisplay(fontSize: 28, color: primaryColor)),
